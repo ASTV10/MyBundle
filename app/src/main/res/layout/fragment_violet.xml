@@ -18,13 +18,54 @@
         android:layout_marginTop="16dp"
         android:textColor="@color/white"/>
     <EditText
-        android:id="@+id/edit"
+        android:id="@+id/edit1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:hint="Введите текст"
+        android:hint="Фамилия"
         android:gravity="center"
         android:textColor="@color/white"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Имя"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/edit3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Отчество"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/edit4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Возраст"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/edit5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Дата"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:inputType="date"
         />
     <Button
         android:id="@+id/sendBtn"

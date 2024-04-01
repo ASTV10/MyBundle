@@ -41,7 +41,11 @@ public class VioletFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         Button button = view.findViewById(R.id.sendBtn);
-        EditText editText = view.findViewById(R.id.edit);
+        EditText editText1 = view.findViewById(R.id.edit1);
+        EditText editText2 = view.findViewById(R.id.edit2);
+        EditText editText3 = view.findViewById(R.id.edit3);
+        EditText editText4 = view.findViewById(R.id.edit4);
+        EditText editText5 = view.findViewById(R.id.edit5);
         TextView textView = view.findViewById(R.id.textView);
         Bundle bundle = new Bundle();
         YellowFragment yellowFragment = new YellowFragment();
@@ -54,9 +58,17 @@ public class VioletFragment extends Fragment {
                 ft.addToBackStack(null);
                 ft.commit();
                 yellowFragment.setArguments(bundle);
-                String text = editText.getText().toString();
-                bundle.putString("text", text);
-                Log.d("FFF", text.toString());
+                String text1 = editText1.getText().toString();
+                String text2 = editText2.getText().toString();
+                String text3 = editText3.getText().toString();
+                String text4 = editText4.getText().toString();
+                String text5 = editText5.getText().toString();
+                bundle.putString("text1", text1);
+                bundle.putString("text2", text2);
+                bundle.putString("text3", text3);
+                bundle.putString("text4", text4);
+                bundle.putString("text5", text5);
+                //Log.d("FFF", text2.toString());
             }
         });
     }
